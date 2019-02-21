@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-using namespace std;
-
 class BloomFilter
 {
   public:
@@ -93,7 +91,7 @@ int main()
     if (!Filter->is_value(_str))
       mistake ++;
   }
-  if (Filter->is_value("ìèğó ìèğ")) test++;
+  if (Filter->is_value("Ã¬Ã¨Ã°Ã³ Ã¬Ã¨Ã°")) test++;
   if (Filter->is_value("8901567234")) mistake++;
   if (Filter->is_value("0231589674")) mistake++;
   test += mistake;
